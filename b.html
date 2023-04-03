@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="n.png">
+    <title>Nav Bar</title>
+    <style>
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-color: rgb(3, 3, 39);
+    }
+    ul{
+        border-top: 6px solid black;
+        border-bottom: 6px solid black;
+        list-style-type: none;
+        background-color: gray;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        height: 60px;
+    }
+    ul li a{
+        padding: 15px 15px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 25px;
+    }
+    ul li a.active{
+        background-color: black;
+        color: white;
+        height: 150px;
+    }
+    ul li a.active:hover{
+        background-color: black;
+        color: white;
+    }
+    ul li{
+        float: left;
+    }
+    ul li a:hover{
+        background-color: white;
+        color: black;
+    }
+    h1{
+        color: white;
+        text-align: center;
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-size: 17px;
+    }
+    #main1{
+        padding: 100px 0px 0px ;
+    }
+    #lab_1{
+            color:  rgb(173, 171, 171);
+            /* position: absolute;
+            right: 230px; */
+        }
+        #lab_2{
+            color:  rgb(173, 171, 171);
+            /* position: absolute;
+            right: 260px; */
+        }
+        .inp_1{
+            height: 40px;
+            width: 300px;
+            background: transparent;
+            text-decoration: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+            color: white;
+            font-size: 15px;
+        }
+        #inp_2{
+            /* padding: 50px 200px; */
+            height: 150px;
+            width: 630px;
+            background: transparent;
+            text-decoration: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+            color: white;
+            font-size: 15px;
+        }
+        #b1{
+            position: absolute;
+            left: 370px;
+            top: 330px;
+        }
+        #b2{
+            position: absolute;
+            left: 700px;
+            top: 330px;
+        }
+        #b3{
+            position: absolute;
+            left: 370px;
+            top: 410px;
+        }
+        #b4{
+            height: 55px;
+            width: 150px;
+            font-size: 25px;
+            background-color: rgb(87, 87, 230);
+            color: white;
+            border-radius: 5px;
+            position: absolute;
+            left: 600px;
+            top: 610px;
+        }
+</style>    
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Design 1</a></li>
+        <li><a href="a.html">Design 2</a></li>
+        <li><a href="b.html">Design 3</a></li>
+        <li><a href="c.html">Design 4</a></li>
+    </ul>
+    <div id="main1">
+        <div id="d1">
+            <h1>Contact Us</h1>
+            <p>Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify</p>
+        </div>
+        <div id="d2">
+            <div id="b1">
+                <label id="lab_1">Name</label>
+                <br>
+                <input class="inp_1" type="text">
+            </div>
+            <div id="b2">
+                <label id="lab_2">Email</label>
+                <br>
+                <input class="inp_1" type="email">
+            </div>
+            <div id="b3">
+                <label id="lab_2">Message</label>
+                <br>
+                <textarea id="inp_2" cols="30" rows="10"></textarea>
+            </div>
+            <input id="b4" type="button" value="Button">
+        </div>
+    </div>
+</body>
+</html>
